@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santanu's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* Navigation Bar Styles */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #0073e6;
+        padding: 15px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+      }
+      nav ul li {
+        display: inline;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+      nav ul li a:hover {
+        color: #ffcc00;
+      }
+
+      /* Basic Layout Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding-top: 80px; /* To avoid content being hidden under fixed nav */
+        background: #f4f4f4;
+        color: #333;
+      }
+
+      header {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #e6f2ff;
+      }
+
+      .profile-img {
+        max-width: 200px;
+        border-radius: 50%;
+        margin-top: 20px;
+      }
+
+      section {
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      h2 {
+        color: #0073e6;
+        margin-bottom: 20px;
+      }
+
+      .project {
+        margin-bottom: 30px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #0073e6;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#home"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fas fa-user"></i> About</a>
+        </li>
+        <li>
+          <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header id="home">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hi, I'm Santanu - a passionate developer.</p>
+      <img
+        src="https://img.freepik.com/premium-photo/adorable-male-manager-character-cute-boy-supervisor-illustration-cartoon-office-manager-young-pro_980716-79632.jpg?w=826"
+        alt="Santanu's Portfolio Image"
+        class="profile-img"
+      />
+    </header>
+
+    <section id="about">
+      <h2><i class="fas fa-user"></i> About Me</h2>
+      <p>I love building web applications and exploring new technologies.</p>
+    </section>
+
+    <section id="projects">
+      <h2><i class="fas fa-code"></i> Projects</h2>
+
+      <div class="project">
+        <h3><i class="fas fa-apple-alt"></i> Nutrition Tracker</h3>
+        <p>
+          A web app that allows users to log meals, track calories, and monitor
+          nutritional goals. Built using MERN stack with real-time chart updates
+          and user authentication.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>
+          <i class="fas fa-chalkboard-teacher"></i> Personal Teacher Web
+          Application
+        </h3>
+        <p>
+          An interactive platform built with MERN that helps teachers manage
+          classes, create quizzes, and track student progress in real time with
+          analytics.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+      <p>Email: kumarnayaksantanu87@gmail.com</p>
+      <p>I am a final-year B.Tech student at ITER, SOA University.</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Santanu. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
